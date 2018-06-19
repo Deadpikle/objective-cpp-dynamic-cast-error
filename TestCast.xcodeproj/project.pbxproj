@@ -7,8 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		34FBD6AA20D847EB006EA493 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FBD6A920D847EB006EA493 /* main.m */; };
+		34FBD6AA20D847EB006EA493 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 34FBD6A920D847EB006EA493 /* main.mm */; };
+		34FBD6FD20D84958006EA493 /* libTestCastCPP.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 34FBD6CC20D84858006EA493 /* libTestCastCPP.dylib */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		34FBD6CB20D84858006EA493 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34FBD6C720D84857006EA493 /* TestCastCPP.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 34FBD6B920D84857006EA493;
+			remoteInfo = TestCastCPP;
+		};
+		34FBD71E20D85979006EA493 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34FBD6C720D84857006EA493 /* TestCastCPP.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 34FBD71520D857BD006EA493;
+			remoteInfo = TestCastCPPCMD;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		34FBD6A420D847EB006EA493 /* CopyFiles */ = {
@@ -24,7 +42,8 @@
 
 /* Begin PBXFileReference section */
 		34FBD6A620D847EB006EA493 /* TestCast */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TestCast; sourceTree = BUILT_PRODUCTS_DIR; };
-		34FBD6A920D847EB006EA493 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		34FBD6A920D847EB006EA493 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		34FBD6C720D84857006EA493 /* TestCastCPP.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TestCastCPP.xcodeproj; path = TestCastCPP/TestCastCPP.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34FBD6FD20D84958006EA493 /* libTestCastCPP.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,8 +61,10 @@
 		34FBD69D20D847EB006EA493 = {
 			isa = PBXGroup;
 			children = (
+				34FBD6C720D84857006EA493 /* TestCastCPP.xcodeproj */,
 				34FBD6A820D847EB006EA493 /* TestCast */,
 				34FBD6A720D847EB006EA493 /* Products */,
+				34FBD6FC20D84958006EA493 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,9 +79,25 @@
 		34FBD6A820D847EB006EA493 /* TestCast */ = {
 			isa = PBXGroup;
 			children = (
-				34FBD6A920D847EB006EA493 /* main.m */,
+				34FBD6A920D847EB006EA493 /* main.mm */,
 			);
 			path = TestCast;
+			sourceTree = "<group>";
+		};
+		34FBD6C820D84857006EA493 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				34FBD6CC20D84858006EA493 /* libTestCastCPP.dylib */,
+				34FBD71F20D85979006EA493 /* TestCastCPPCMD */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		34FBD6FC20D84958006EA493 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -106,6 +144,12 @@
 			mainGroup = 34FBD69D20D847EB006EA493;
 			productRefGroup = 34FBD6A720D847EB006EA493 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 34FBD6C820D84857006EA493 /* Products */;
+					ProjectRef = 34FBD6C720D84857006EA493 /* TestCastCPP.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				34FBD6A520D847EB006EA493 /* TestCast */,
@@ -113,12 +157,29 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		34FBD6CC20D84858006EA493 /* libTestCastCPP.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libTestCastCPP.dylib;
+			remoteRef = 34FBD6CB20D84858006EA493 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		34FBD71F20D85979006EA493 /* TestCastCPPCMD */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = TestCastCPPCMD;
+			remoteRef = 34FBD71E20D85979006EA493 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXSourcesBuildPhase section */
 		34FBD6A220D847EB006EA493 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34FBD6AA20D847EB006EA493 /* main.m in Sources */,
+				34FBD6AA20D847EB006EA493 /* main.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +307,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				GCC_OPTIMIZATION_LEVEL = s;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
